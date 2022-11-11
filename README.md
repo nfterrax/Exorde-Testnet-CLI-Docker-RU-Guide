@@ -48,9 +48,13 @@ cd ./ExordeModuleCLI
 ```
 12
 ```
-docker build -t exorde-cli .
+git pull
 ```
 13
+```
+docker build -t exorde-cli .
+```
+14
 ```
 docker run -d -e PYTHONUNBUFFERED=1 exorde-cli -m ВАШ_ОСНОВНОЙ_ETH_КОШЕЛЕК -l 2
 ```
