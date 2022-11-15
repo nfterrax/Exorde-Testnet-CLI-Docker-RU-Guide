@@ -40,38 +40,26 @@ sudo systemctl status docker
 ```
 10
 ```
-git clone https://github.com/exorde-labs/ExordeModuleCLI.git
-```
-11
-```
-cd ./ExordeModuleCLI
-```
-12
-```
-git pull
-```
-13
-```
-docker build -t exorde-cli .
-```
-14
-```
-docker run -d -e PYTHONUNBUFFERED=1 exorde-cli -m ВАШ_ОСНОВНОЙ_ETH_КОШЕЛЕК -l 2
+docker run -d --restart unless-stopped --pull always --name ИМЯ_КОНТЕЙНЕРА rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m ВАШ_ОСНОВНОЙ_ETH_КОШЕЛЕК -l 2
 ```
 Например:
 ```
-docker run -d -e PYTHONUNBUFFERED=1 exorde-cli -m 0x16f177263988fF6fc8999013BD9bCB70F39b42d3 -l 2
+docker run -d --restart unless-stopped --pull always --name exorde-cli1 rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m 0x16f177263988fF6fc8999013BD9bCB70F39b42d3 -l 2
 ```
 
 ### ПРИМЕЧАНИЯ
 
 Готово! Ваш модуль запущен в контейнере в фоновом режиме. Теперь вы можете закрыть терминал CLI, и модуль продолжит работать.
 
-Чтобы запустить другую копию модуля, просто повторите ту же команду:
+Чтобы запустить другую копию модуля, просто повторите ту же команду но с другим именем:
 ```
-docker run -d exorde-cli -m YOUR_MAIN_ADDRESS -l 2
+docker run -d --restart unless-stopped --pull always --name ИМЯ_КОНТЕЙНЕРА2 rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m ВАШ_ОСНОВНОЙ_ETH_КОШЕЛЕК -l 2
 ```
-Сколько раз вы ввeдете эту команду, столько модулей вы запустите.
+Например:
+```
+docker run -d --restart unless-stopped --pull always --name exorde-cli2 rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m 0x16f177263988fF6fc8999013BD9bCB70F39b42d3 -l 2
+```
+Сколько раз вы ввeдете эту команду с разными именами, столько модулей вы запустите.
 
 Не забывайте, что контейнеры иногда могут останавливаться. И их необходимо перезапускать. Сначала нам нужно узнать <container_id>.
 Для этого введите команду, которая отобразит все наши контейнеры:
