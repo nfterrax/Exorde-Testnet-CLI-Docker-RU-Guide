@@ -1,5 +1,8 @@
 # Руководство по Exorde Testnet для CLI и Docker
 
+Помните, что вам необходимо постоянно следить за обновлениями, которые публикуются в [Discord Exorde](https://discord.gg/ExordeLabs) в канале #testnet.
+Данный гайд будет обновляться в соответствии с новостями из Discord.
+
 ### АКТУАЛЬНАЯ ВЕРСИЯ: 1.3.3b
 
 ### ТРЕБОВАНИЯ
@@ -112,8 +115,6 @@ docker rm <container_id>
 top
 ```
 
-[ОФИЦИАЛЬНОЕ РУКОВОДСТВО ОТ КОМАНДЫ EXORDE LABS](https://github.com/exorde-labs/ExordeModuleCLI/tree/feat/docker)
+[ОФИЦИАЛЬНОЕ РУКОВОДСТВО ОТ КОМАНДЫ EXORDE LABS](https://docs.exorde.network/)
 
-Помните, что вам необходимо постоянно следить за обновлениями, которые публикуются в [Discord Exorde](https://discord.gg/ExordeLabs) в канале #testnet.
-
-Данный гайд будет обновляться в соответствии с новостями из Discord.
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
