@@ -71,7 +71,7 @@ docker run -d --restart unless-stopped --pull always --name <ИМЯ_КОНТЕЙ
 >  
 > Оптимально использовать: 2
 
-Таким образом, пример готовой команды для запуска 1 модуля(контейнера) выглядит следующим образом:
+Таким образом, пример готовой команды для запуска 1 модуля (контейнера) выглядит следующим образом:
 ```
 docker run -d --restart unless-stopped --pull always --name exorde-cli_1 rg.fr-par.scw.cloud/exorde-labs/exorde-cli -m 0x16f177263988fF6fc8999013BD9bCB70F39b42d3 -l 2
 ```
