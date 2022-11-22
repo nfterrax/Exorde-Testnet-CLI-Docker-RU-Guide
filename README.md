@@ -104,7 +104,10 @@ docker run -d --restart unless-stopped --pull always --name exorde-cli_2 rg.fr-p
 docker ps -a
 ```
 
-Если статус контейнера "Exited", значит он сейчас не работает. Нужно сделать рестарт:
+Если статус контейнера "Up to..." - модуль сейчас активен.
+
+Если статус контейнера "Exited" - данный модуль сейчас не работает. Нужно сделать рестарт:
+![image](https://user-images.githubusercontent.com/97410466/203429617-c52b747f-570b-4dc7-b08d-8f628279506a.png)
 
 ```
 docker restart <container_id>
